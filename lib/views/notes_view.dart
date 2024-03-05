@@ -10,7 +10,8 @@ class notes_view extends StatelessWidget{
       floatingActionButton:FloatingActionButton(onPressed: (){
         showModalBottomSheet(context: context, builder: (context){
           return const AddNotesBottomSheet();
-        });
+        },
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)));
       },
       child:const Icon(Icons.add,),) ,);
   }
