@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tharwat_note_app29_2_24/widgets/Custom_App_Bar.dart';
+import 'package:tharwat_note_app29_2_24/widgets/CustomeTextField.dart';
 
 class Edit_Note_View_body extends StatelessWidget{
   @override
@@ -8,7 +9,11 @@ class Edit_Note_View_body extends StatelessWidget{
       padding: const EdgeInsets.symmetric(horizontal: 16.0),
       child: Column(children:const [
         SizedBox(height: 35),
-        Custom_App_Bar(icon: Icons.check,title: 'Edit Note',)],),
+        Custom_App_Bar(icon: Icons.check,title: 'Edit Note',),
+        CustomeTextField(hint: 'Title'),
+        SizedBox(height: 16,),
+        CustomeTextField(hint: 'Content',maxlines: 4,)
+      ],),
     );
   }
 }
